@@ -1,0 +1,103 @@
+/*Estilos principales*/
+@import url('https://fonts.googleapis.com/css2?family=Itim&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    /*background-image: url('https://images.pexels.com/photos/235621/pexels-photo-235621.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+    */
+    font-family: 'Roboto', sans-serif;
+}
+
+h1{
+    font-family: 'Itim', cursive;
+    color: rgb(247, 253, 255);
+    text-align: center;
+}
+
+/*Estilos del formulario*/
+.frm-container{
+    background-color: rgba(219, 110, 192, 0.7);
+    max-width: 35rem;
+    width: 100%;
+    margin: 145px auto;
+    
+    padding: 5rem;
+    color: #FFFFFF;
+}
+
+.frm-input{
+    width: 100%;
+    min-height: 2.5rem;
+    height: 100%;
+    box-shadow: 4px 4px 3px #e27de6ad;
+    opacity: 0.9;
+    margin-top: 1rem;
+    padding-left: 1rem;
+}
+.frm-input:focus{
+    outline-style: none;
+}
+
+.btn-enviar{
+    background-color: rgb(162, 97, 155);
+    padding: 10px 25px;
+    color: #FFFFFF;
+    font-weight: bold;
+    margin-top: 1rem;
+}
+
+.btn-enviar:hover{
+    color: chartreuse;
+}
+
+/*Estilos de mensajes de validación*/
+
+.frm-g-input{
+    position: relative;
+}
+
+.frm-icono{
+    position: absolute;
+    right: 1rem;
+    bottom: 1.8rem;
+}
+
+.msn-error{
+    color: rgb(255, 15, 7);
+    font-size: 0.7em;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.msn-error-visible{
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 1s ease;
+}
+
+.error .frm-icono{
+    color: darkred;
+}
+
+.success .frm-icono{
+    color: #00FF00;
+}
+/*ERROR MENSAJE*/
+.frm-error{
+    background: rgb(112, 58, 107);
+    padding: 1rem;
+    margin-top: 1rem;
+    border-radius: 3px;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.frm-error{
+    visibility: visible;
+    opacity: 1;
+}
